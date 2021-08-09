@@ -7,7 +7,7 @@ There are many tools that can easily convert a DMG to a PKG format that is easy 
 ## How it works
 
 1. Download and install [quickpkg](https://github.com/scriptingosx/quickpkg/). Ensure that the quickpkg command is in your $PATH!
-2. Download the Make-DMGs-From-Pkgs script.
+2. Download the _Dmg2Pkg.sh_ script.
 3. Install this script where you want, and don't forget to _chmod 755_ it.
 4. Change the variables in the script. If you don't, it will create a new _Make_DMG_From_PKG_ folder in _/Users/_Shared_.
 5. Move your DMG file in the **Source_DMGs** folder.
