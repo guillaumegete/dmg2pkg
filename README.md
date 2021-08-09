@@ -1,4 +1,4 @@
-# Make DMGs from PKGs
+# Dmg2Pkg
 
 A great deal of the macOS apps provided on the Net are DMG files, that contain a single app at the root of the volume. Then, one must drag manually the app to the Applications folder to install it. This makes the process of installing these apps cumbersome when they must be imported into a deployment system (say, [Jamf Pro](https://www.jamf.com)) as these can't import directly the DMG and work with it… The DMG must be converted first.
 
