@@ -18,7 +18,7 @@ There are many tools that can easily convert a DMG to a PKG format that is easy 
 
 Let's make things a bit more automatic!
 
-1. Get the launchagent file.
+1. Get the launchagent file (net.gete.dmg2pkg.plist).
 2. Install it in ~/Library/LaunchAgents.
 3. Launch the file with : _launchctl load net.gete.dmg2pkg_
 4. Move your DMG file in the **Source_DMGs** folder.
