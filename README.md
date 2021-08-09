@@ -20,6 +20,6 @@ Let's make things a bit more automatic!
 
 1. Get the Launchagent file (_net.gete.dmg2pkg.plist_).
 2. Install it in _~/Library/LaunchAgents_.
-3. Launch the file with : `launchctl load net.gete.dmg2pkg`
+3. Launch the file with : `launchctl load ~/Library/LaunchAgents/net.gete.dmg2pkg.plist`
 4. Move your DMG file in the **Source_DMGs** folder.
 5. Wait for a few seconds, and the new PKG files should appear in the _Packages_ folder and the DMG should move in the _Processed_DMGs_ folder automatically.
