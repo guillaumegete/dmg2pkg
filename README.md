@@ -2,7 +2,7 @@
 
 A great deal of the macOS apps provided on the Net are DMG files, that contain a single app at the root of the volume. Then, one must drag manually the app to the Applications folder to install it. This makes the process of installing these apps cumbersome when they must be imported into a deployment system (say, [Jamf Pro](https://www.jamf.com)) as these can't import directly the DMG and work with it… The DMG must be converted first.
 
-There are many tools that can easily convert a DMG to a PKG format that is easy to import in Jamf Pro, like [AutoPkgr](https://github.com/lindegroup/autopkgr/), but they can be a bit complex to deal with and they have their limits, i.e. downloading the DMG if it's located behind a paywall. [quickpkg](https://github.com/scriptingosx/quickpkg/) is another great tool, but I wanted to find a fast way to perform batch conversion of DMG files, and also be able to make conversion as easy as dropping the files in a folder. Thus, Make DMGs from PKGs here.
+There are many tools that can easily convert a DMG to a PKG format that is easy to import in Jamf Pro, like [AutoPkgr](https://github.com/lindegroup/autopkgr/), but they can be a bit complex to deal with and they have their limits, i.e. downloading the DMG if it's located behind a paywall. [quickpkg](https://github.com/scriptingosx/quickpkg/) is another great tool, but I wanted to find a fast way to perform batch conversion of DMG files, and also be able to make conversion as easy as dropping the files in a folder. Thus, Dmg2Pkg here.
 
 ## How it works
 
