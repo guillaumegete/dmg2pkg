@@ -9,7 +9,7 @@ There are many tools that can easily convert a DMG to a PKG format that is easy 
 1. Download and install [quickpkg](https://github.com/scriptingosx/quickpkg/). Ensure that the quickpkg command is in your $PATH!
 2. Download the _Dmg2Pkg.sh_ script.
 3. Install this script where you want, and don't forget to _chmod 755_ it.
-4. Change the variables in the script. If you don't, it will create a new _Make_DMG_From_PKG_ folder in _/Users/_Shared_.
+4. Change the variables in the script. If you don't, it will create a new _Dmg2Pkg_ folder in _/Users/_Shared_.
 5. Move your DMG file in the **Source_DMGs** folder.
 6. Run the script.
 7. If everything works properly, new PKGs file should be spit in the _Packages_ folder and the DMG should move in the _Processed_DMGs_ folder automatically.
@@ -20,6 +20,9 @@ Let's make things a bit more automatic!
 
 1. Get the Launchagent file (_net.gete.dmg2pkg.plist_).
 2. Install it in _~/Library/LaunchAgents_.
-3. Launch the file with : `launchctl load ~/Library/LaunchAgents/net.gete.dmg2pkg.plist`
-4. Move your DMG file in the **Source_DMGs** folder.
-5. Wait for a few seconds, and the new PKG files should appear in the _Packages_ folder and the DMG should move in the _Processed_DMGs_ folder automatically.
+3. Open the file and check the paths if you moved the file (especially, check the path to the `Dmg2Pkg.sh` script).
+4. Launch the file with : `launchctl load ~/Library/LaunchAgents/net.gete.dmg2pkg.plist`
+5. Move your DMG files in the **Source_DMGs** folder.
+6. Wait for a few seconds, and the new PKG files should appear in the _Packages_ folder and the DMG should move in the _Processed_DMGs_ folder automatically.
+
+If something weird happens (i.e. a package not generated), check _Activity.log_ file. All `quickpkg` logs should be redirected in it.
